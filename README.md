@@ -27,7 +27,7 @@ English: [README.en.md](README.en.md)
 
 | 期 | 内容 | 结论 |
 |---|---|---|
-| [2026-W37](results/2026-W37.md) | swe-1-7-medium @ high 全库首考(23 案) | 14/23(公共 21 案子集 12/21);对抗审查案 A-cdc3d11a 全部已发布矩阵首过;视觉案 W37 唯一过;verify 三连全败;UI 搭建案依旧只有 astra 能过 |
+| [2026-W37](results/2026-W37.md) | swe-1-7-medium 全库首考(23 案,UID 档=medium) | 14/23(公共 21 案子集 12/21);对抗审查案 A-cdc3d11a 全部已发布矩阵首过;视觉案 W37 唯一过;verify 三连全败;UI 搭建案依旧只有 astra 能过 |
 
 ## 免责
 

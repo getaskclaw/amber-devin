@@ -21,7 +21,7 @@ Public periodic [AMBER](https://github.com/getaskclaw/amber-eval) benchmark resu
 
 | Issue | Content | Headline |
 |---|---|---|
-| [2026-W37](results/2026-W37.md) | swe-1-7-medium @ high, full 23-case library debut | 14/23 (12/21 public subset); first published pass on adversarial-review case A-cdc3d11a; only W37 vision pass; all three verify cases fail; ui-build still only passes for astra |
+| [2026-W37](results/2026-W37.md) | swe-1-7-medium, full 23-case library debut (UID band = medium) | 14/23 (12/21 public subset); first published pass on adversarial-review case A-cdc3d11a; only W37 vision pass; all three verify cases fail; ui-build still only passes for astra |
 
 ## Disclaimer
 
