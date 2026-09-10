@@ -21,7 +21,7 @@ Public periodic [AMBER](https://github.com/getaskclaw/amber) benchmark results o
 
 | Issue | Content | Headline |
 |---|---|---|
-| [2026-W37](results/2026-W37.md) | swe-1-7-medium + glm-5-2, dual 23-case library debuts | medium 14/23 (12/21 subset, zero-face-at-zero, the free-lane all-rounder); glm-5-2 6/23 but second-ever ui-build passer; glm's delivery-contract failure (6 papers, prose in chat, no file) = operational disqualifier |
+| [2026-W37](results/2026-W37.md) | swe-1-7-medium + glm-5-2 + swe-2-high, 23-case library | swe-2-high 16/23 (14/21 subset, launch-day debut: third-ever ui-build pass and the first perfect 12/12, but drops the family's review-case scalp); medium 14/23 (12/21 subset, first published A-cdc3d11a pass); glm-5-2 6/23 but second-ever ui-build passer, delivery-contract failure = operational disqualifier |
 
 ## Disclaimer
 
