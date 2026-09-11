@@ -27,7 +27,7 @@ English: [README.en.md](README.en.md)
 
 | 期 | 内容 | 结论 |
 |---|---|---|
-| [2026-W37](results/2026-W37.md) | swe-1-7-medium + glm-5-2 + swe-2-high + swe-2-medium + swe-2-max 五模型全库(23 案) | **swe-2-max 18/23(16/21)全库新榜首**,档线单调到底(medium 15 < high 16 < max 18),OPS 面史上首个 6/6 全清,代价 ~4 倍墙钟;swe-2-medium 15/23 最快全库 43 分钟+视觉 4.0 史上最高;swe-1-7-medium 审查案首过无人继承;glm-5-2 6/23 交付契约零遵守=运行级失格 |
+| [2026-W37](results/2026-W37.md) | swe-1-7-medium + glm-5-2 + swe-2-high + swe-2-medium + swe-2-max 五模型全库（23 案） | **swe-2-max 18/23（16/21）全库新榜首**，档线单调到底（medium 15 < high 16 < max 18），OPS 面史上首个 6/6 全清，代价 ~4 倍墙钟；swe-2-medium 15/23 最快全库 43 分钟+视觉 4.0 史上最高；swe-1-7-medium 审查案首过无人继承；glm-5-2 6/23 交付契约零遵守=运行级失格 |
 
 ## 免责
 
