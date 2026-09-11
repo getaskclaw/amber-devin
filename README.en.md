@@ -21,7 +21,7 @@ Public periodic [AMBER](https://github.com/getaskclaw/amber) benchmark results o
 
 | Issue | Content | Headline |
 |---|---|---|
-| [2026-W37](results/2026-W37.md) | swe-1-7-medium + glm-5-2 + swe-2-high + swe-2-medium, 23-case library | swe-2-high 16/23 (14/21 subset, launch-day debut: first-ever perfect ui-build 12/12, but drops the family's review scalp); swe-2-medium 15/23 (13/21, fastest full library at 43 min, best-ever vision 4.0; monotone band curve, no sweet low band); medium 14/23 (first published A-cdc3d11a pass); glm-5-2 6/23 but second-ever ui-build passer, delivery-contract failure = operational disqualifier |
+| [2026-W37](results/2026-W37.md) | swe-1-7-medium + glm-5-2 + swe-2-high + swe-2-medium + swe-2-max, 23-case library | **swe-2-max 18/23 (16/21) — new suite-wide board top**, monotone band curve all the way (15 < 16 < 18), first-ever OPS 6/6 sweep, at ~4× the wall clock; swe-2-medium 15/23 fastest full library (43 min) with best-ever vision 4.0; swe-1-7-medium's review scalp stays uninherited; glm-5-2 6/23, delivery-contract failure = operational disqualifier |
 
 ## Disclaimer
 
