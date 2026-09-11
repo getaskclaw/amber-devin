@@ -1,0 +1,455 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "background": "white",
+ "title": {
+  "text": [
+   "Face profile: pass-rate heat, five models x eight faces",
+   "(2026-W37 full matrix, 23-case library)"
+  ],
+  "fontSize": 16,
+  "anchor": "start",
+  "subtitle": "color depth = pass rate; cell = cases passed / cases; ✗ and ∅ count as not passed; scored d2 cells read as ✓/✗ only",
+  "subtitleFontSize": 11,
+  "subtitleColor": "#777",
+  "subtitlePadding": 6
+ },
+ "data": {
+  "values": [
+   {
+    "model": "swe-2-max",
+    "face": "req-drift",
+    "rate": 1.0,
+    "label": "1/1"
+   },
+   {
+    "model": "swe-2-max",
+    "face": "text",
+    "rate": 1.0,
+    "label": "3/3"
+   },
+   {
+    "model": "swe-2-max",
+    "face": "ops",
+    "rate": 1.0,
+    "label": "6/6"
+   },
+   {
+    "model": "swe-2-max",
+    "face": "build",
+    "rate": 0.8333,
+    "label": "5/6"
+   },
+   {
+    "model": "swe-2-max",
+    "face": "review",
+    "rate": 0.5,
+    "label": "1/2"
+   },
+   {
+    "model": "swe-2-max",
+    "face": "verify",
+    "rate": 0.0,
+    "label": "0/3"
+   },
+   {
+    "model": "swe-2-max",
+    "face": "UI build",
+    "rate": 1.0,
+    "label": "1/1"
+   },
+   {
+    "model": "swe-2-max",
+    "face": "vision",
+    "rate": 1.0,
+    "label": "1/1"
+   },
+   {
+    "model": "swe-2-high",
+    "face": "req-drift",
+    "rate": 1.0,
+    "label": "1/1"
+   },
+   {
+    "model": "swe-2-high",
+    "face": "text",
+    "rate": 1.0,
+    "label": "3/3"
+   },
+   {
+    "model": "swe-2-high",
+    "face": "ops",
+    "rate": 0.6667,
+    "label": "4/6"
+   },
+   {
+    "model": "swe-2-high",
+    "face": "build",
+    "rate": 0.8333,
+    "label": "5/6"
+   },
+   {
+    "model": "swe-2-high",
+    "face": "review",
+    "rate": 0.5,
+    "label": "1/2"
+   },
+   {
+    "model": "swe-2-high",
+    "face": "verify",
+    "rate": 0.0,
+    "label": "0/3"
+   },
+   {
+    "model": "swe-2-high",
+    "face": "UI build",
+    "rate": 1.0,
+    "label": "1/1"
+   },
+   {
+    "model": "swe-2-high",
+    "face": "vision",
+    "rate": 1.0,
+    "label": "1/1"
+   },
+   {
+    "model": "swe-2-medium",
+    "face": "req-drift",
+    "rate": 1.0,
+    "label": "1/1"
+   },
+   {
+    "model": "swe-2-medium",
+    "face": "text",
+    "rate": 1.0,
+    "label": "3/3"
+   },
+   {
+    "model": "swe-2-medium",
+    "face": "ops",
+    "rate": 0.6667,
+    "label": "4/6"
+   },
+   {
+    "model": "swe-2-medium",
+    "face": "build",
+    "rate": 0.6667,
+    "label": "4/6"
+   },
+   {
+    "model": "swe-2-medium",
+    "face": "review",
+    "rate": 0.5,
+    "label": "1/2"
+   },
+   {
+    "model": "swe-2-medium",
+    "face": "verify",
+    "rate": 0.0,
+    "label": "0/3"
+   },
+   {
+    "model": "swe-2-medium",
+    "face": "UI build",
+    "rate": 1.0,
+    "label": "1/1"
+   },
+   {
+    "model": "swe-2-medium",
+    "face": "vision",
+    "rate": 1.0,
+    "label": "1/1"
+   },
+   {
+    "model": "swe-1-7-medium",
+    "face": "req-drift",
+    "rate": 0.0,
+    "label": "0/1"
+   },
+   {
+    "model": "swe-1-7-medium",
+    "face": "text",
+    "rate": 1.0,
+    "label": "3/3"
+   },
+   {
+    "model": "swe-1-7-medium",
+    "face": "ops",
+    "rate": 0.6667,
+    "label": "4/6"
+   },
+   {
+    "model": "swe-1-7-medium",
+    "face": "build",
+    "rate": 0.8333,
+    "label": "5/6"
+   },
+   {
+    "model": "swe-1-7-medium",
+    "face": "review",
+    "rate": 0.5,
+    "label": "1/2"
+   },
+   {
+    "model": "swe-1-7-medium",
+    "face": "verify",
+    "rate": 0.0,
+    "label": "0/3"
+   },
+   {
+    "model": "swe-1-7-medium",
+    "face": "UI build",
+    "rate": 0.0,
+    "label": "0/1"
+   },
+   {
+    "model": "swe-1-7-medium",
+    "face": "vision",
+    "rate": 1.0,
+    "label": "1/1"
+   },
+   {
+    "model": "glm-5-2",
+    "face": "req-drift",
+    "rate": 0.0,
+    "label": "0/1"
+   },
+   {
+    "model": "glm-5-2",
+    "face": "text",
+    "rate": 1.0,
+    "label": "3/3"
+   },
+   {
+    "model": "glm-5-2",
+    "face": "ops",
+    "rate": 0.0,
+    "label": "0/6"
+   },
+   {
+    "model": "glm-5-2",
+    "face": "build",
+    "rate": 0.1667,
+    "label": "1/6"
+   },
+   {
+    "model": "glm-5-2",
+    "face": "review",
+    "rate": 0.5,
+    "label": "1/2"
+   },
+   {
+    "model": "glm-5-2",
+    "face": "verify",
+    "rate": 0.0,
+    "label": "0/3"
+   },
+   {
+    "model": "glm-5-2",
+    "face": "UI build",
+    "rate": 1.0,
+    "label": "1/1"
+   },
+   {
+    "model": "glm-5-2",
+    "face": "vision",
+    "rate": 0.0,
+    "label": "0/1"
+   }
+  ]
+ },
+ "width": 520,
+ "height": 340,
+ "config": {
+  "font": "Noto Sans CJK SC",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 13
+  },
+  "legend": {
+   "labelFontSize": 12
+  },
+  "view": {
+   "stroke": null
+  }
+ },
+ "layer": [
+  {
+   "mark": {
+    "type": "rect",
+    "stroke": "white",
+    "strokeWidth": 2
+   },
+   "encoding": {
+    "x": {
+     "field": "model",
+     "type": "nominal",
+     "sort": [
+      "swe-2-max",
+      "swe-2-high",
+      "swe-2-medium",
+      "swe-1-7-medium",
+      "glm-5-2"
+     ],
+     "axis": {
+      "title": null,
+      "labelFontSize": 11,
+      "labelLimit": 0
+     }
+    },
+    "y": {
+     "field": "face",
+     "type": "nominal",
+     "sort": [
+      "req-drift",
+      "text",
+      "ops",
+      "build",
+      "review",
+      "verify",
+      "UI build",
+      "vision"
+     ],
+     "axis": {
+      "title": null,
+      "labelFontSize": 12,
+      "labelLimit": 0
+     }
+    },
+    "color": {
+     "field": "rate",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       0.25,
+       0.5,
+       0.75,
+       1
+      ],
+      "range": [
+       "#EAF9FB",
+       "#A5E8F0",
+       "#26C6DA",
+       "#00838F",
+       "#006064"
+      ]
+     },
+     "legend": {
+      "title": "pass rate",
+      "format": ".0%"
+     }
+    }
+   }
+  },
+  {
+   "transform": [
+    {
+     "filter": "datum.rate >= 0.6"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "align": "center",
+    "baseline": "middle",
+    "fontSize": 11,
+    "color": "white"
+   },
+   "encoding": {
+    "x": {
+     "field": "model",
+     "type": "nominal",
+     "sort": [
+      "swe-2-max",
+      "swe-2-high",
+      "swe-2-medium",
+      "swe-1-7-medium",
+      "glm-5-2"
+     ],
+     "axis": {
+      "title": null,
+      "labelFontSize": 11,
+      "labelLimit": 0
+     }
+    },
+    "y": {
+     "field": "face",
+     "type": "nominal",
+     "sort": [
+      "req-drift",
+      "text",
+      "ops",
+      "build",
+      "review",
+      "verify",
+      "UI build",
+      "vision"
+     ],
+     "axis": {
+      "title": null,
+      "labelFontSize": 12,
+      "labelLimit": 0
+     }
+    },
+    "text": {
+     "field": "label",
+     "type": "nominal"
+    }
+   }
+  },
+  {
+   "transform": [
+    {
+     "filter": "datum.rate < 0.6"
+    }
+   ],
+   "mark": {
+    "type": "text",
+    "align": "center",
+    "baseline": "middle",
+    "fontSize": 11,
+    "color": "#006064"
+   },
+   "encoding": {
+    "x": {
+     "field": "model",
+     "type": "nominal",
+     "sort": [
+      "swe-2-max",
+      "swe-2-high",
+      "swe-2-medium",
+      "swe-1-7-medium",
+      "glm-5-2"
+     ],
+     "axis": {
+      "title": null,
+      "labelFontSize": 11,
+      "labelLimit": 0
+     }
+    },
+    "y": {
+     "field": "face",
+     "type": "nominal",
+     "sort": [
+      "req-drift",
+      "text",
+      "ops",
+      "build",
+      "review",
+      "verify",
+      "UI build",
+      "vision"
+     ],
+     "axis": {
+      "title": null,
+      "labelFontSize": 12,
+      "labelLimit": 0
+     }
+    },
+    "text": {
+     "field": "label",
+     "type": "nominal"
+    }
+   }
+  }
+ ]
+}

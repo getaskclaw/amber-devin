@@ -1,0 +1,235 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "background": "white",
+ "title": {
+  "text": [
+   "W37 成绩单：swe-2-max 18/23 全库榜首",
+   "（23 案全库；档 = UID 后缀；SWE-2 档线单调 15 < 16 < 18）"
+  ],
+  "fontSize": 16,
+  "anchor": "start",
+  "subtitle": "柱下小字 = 公共 21 案子集成绩（同出 W37 期文 The ladder 表）",
+  "subtitleFontSize": 11,
+  "subtitleColor": "#777",
+  "subtitlePadding": 6
+ },
+ "data": {
+  "values": [
+   {
+    "model": "swe-2-max",
+    "pass": 18,
+    "subset": "(16/21)"
+   },
+   {
+    "model": "swe-2-high",
+    "pass": 16,
+    "subset": "(14/21)"
+   },
+   {
+    "model": "swe-2-medium",
+    "pass": 15,
+    "subset": "(13/21)"
+   },
+   {
+    "model": "swe-1-7-medium",
+    "pass": 14,
+    "subset": "(12/21)"
+   },
+   {
+    "model": "glm-5-2",
+    "pass": 6,
+    "subset": "(6/21)"
+   }
+  ]
+ },
+ "width": 600,
+ "height": 300,
+ "config": {
+  "font": "Noto Sans CJK SC",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 13
+  },
+  "legend": {
+   "labelFontSize": 12
+  },
+  "view": {
+   "stroke": null
+  }
+ },
+ "layer": [
+  {
+   "mark": {
+    "type": "bar",
+    "cornerRadiusTopLeft": 3,
+    "cornerRadiusTopRight": 3
+   },
+   "encoding": {
+    "x": {
+     "field": "model",
+     "type": "nominal",
+     "sort": [
+      "swe-2-max",
+      "swe-2-high",
+      "swe-2-medium",
+      "swe-1-7-medium",
+      "glm-5-2"
+     ],
+     "axis": {
+      "title": null,
+      "labelFontSize": 12,
+      "labelLimit": 0
+     }
+    },
+    "y": {
+     "field": "pass",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       23
+      ]
+     },
+     "axis": {
+      "title": "通过案数（/ 23）",
+      "values": [
+       0,
+       5,
+       10,
+       15,
+       20,
+       23
+      ]
+     }
+    },
+    "color": {
+     "field": "model",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "swe-2-max",
+       "swe-2-high",
+       "swe-2-medium",
+       "swe-1-7-medium",
+       "glm-5-2"
+      ],
+      "range": [
+       "#006064",
+       "#00838F",
+       "#26C6DA",
+       "#8D6E63",
+       "#E67E22"
+      ]
+     },
+     "legend": null
+    }
+   }
+  },
+  {
+   "mark": {
+    "type": "text",
+    "align": "center",
+    "baseline": "bottom",
+    "dy": -5,
+    "fontSize": 13,
+    "color": "#006064"
+   },
+   "encoding": {
+    "x": {
+     "field": "model",
+     "type": "nominal",
+     "sort": [
+      "swe-2-max",
+      "swe-2-high",
+      "swe-2-medium",
+      "swe-1-7-medium",
+      "glm-5-2"
+     ],
+     "axis": {
+      "title": null,
+      "labelFontSize": 12,
+      "labelLimit": 0
+     }
+    },
+    "y": {
+     "field": "pass",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       23
+      ]
+     },
+     "axis": {
+      "title": "通过案数（/ 23）",
+      "values": [
+       0,
+       5,
+       10,
+       15,
+       20,
+       23
+      ]
+     }
+    },
+    "text": {
+     "field": "pass",
+     "type": "quantitative"
+    }
+   }
+  },
+  {
+   "mark": {
+    "type": "text",
+    "align": "center",
+    "baseline": "bottom",
+    "dy": -22,
+    "fontSize": 10,
+    "color": "#8D6E63"
+   },
+   "encoding": {
+    "x": {
+     "field": "model",
+     "type": "nominal",
+     "sort": [
+      "swe-2-max",
+      "swe-2-high",
+      "swe-2-medium",
+      "swe-1-7-medium",
+      "glm-5-2"
+     ],
+     "axis": {
+      "title": null,
+      "labelFontSize": 12,
+      "labelLimit": 0
+     }
+    },
+    "y": {
+     "field": "pass",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       23
+      ]
+     },
+     "axis": {
+      "title": "通过案数（/ 23）",
+      "values": [
+       0,
+       5,
+       10,
+       15,
+       20,
+       23
+      ]
+     }
+    },
+    "text": {
+     "field": "subset",
+     "type": "nominal"
+    }
+   }
+  }
+ ]
+}

@@ -17,6 +17,13 @@ Public periodic [AMBER](https://github.com/getaskclaw/amber) benchmark results o
 4. Case numbering is private: public matrices use stable aliases (A-xxxxxxxx, hash-derived) plus bundle hashes only.
 5. Tone: community measurement, not vendor attacks.
 
+## Charts
+
+- **Report card** (2026-W37, 23-case library; figures from the issue's ladder table): swe-2-max 18/23 tops the board, SWE-2 band curve monotone 15 < 16 < 18; swe-1-7-medium 14/23, glm-5-2 6/23; small labels = public 21-case subset.
+  ![W37 report card: five-model bars](docs/images/scorecard-2026-w37.en.png)
+- **Face profile** (2026-W37 full matrix, face x model heatmap; color depth = per-face pass rate): swe-2-max sweeps ops 6/6, a suite first; all three SWE-2 bands pass UI build; verify is 0/3 for every model.
+  ![Face profile: pass-rate heatmap by model](docs/images/face-profile-2026-w37.en.png)
+
 ## Results index
 
 | Issue | Content | Headline |
