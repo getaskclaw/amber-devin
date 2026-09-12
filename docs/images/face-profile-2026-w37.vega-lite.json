@@ -3,7 +3,7 @@
  "background": "white",
  "title": {
   "text": [
-   "案面画像：五模型 × 八面分面通过率",
+   "案面画像：六模型 × 八面分面通过率",
    "（2026-W37 Full matrix 单表，23 案全库）"
   ],
   "fontSize": 16,
@@ -254,6 +254,54 @@
     "face": "视觉",
     "rate": 0.0,
     "label": "0/1"
+   },
+   {
+    "model": "swe-2-low",
+    "face": "需求漂移",
+    "rate": 1.0,
+    "label": "1/1"
+   },
+   {
+    "model": "swe-2-low",
+    "face": "文本",
+    "rate": 1.0,
+    "label": "3/3"
+   },
+   {
+    "model": "swe-2-low",
+    "face": "运维",
+    "rate": 0.6667,
+    "label": "4/6"
+   },
+   {
+    "model": "swe-2-low",
+    "face": "构建",
+    "rate": 0.8333,
+    "label": "5/6"
+   },
+   {
+    "model": "swe-2-low",
+    "face": "审查",
+    "rate": 0.5,
+    "label": "1/2"
+   },
+   {
+    "model": "swe-2-low",
+    "face": "核验",
+    "rate": 0.0,
+    "label": "0/3"
+   },
+   {
+    "model": "swe-2-low",
+    "face": "UI 搭建",
+    "rate": 1.0,
+    "label": "1/1"
+   },
+   {
+    "model": "swe-2-low",
+    "face": "视觉",
+    "rate": 1.0,
+    "label": "1/1"
    }
   ]
  },

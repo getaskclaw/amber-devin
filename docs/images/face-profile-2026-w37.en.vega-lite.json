@@ -3,7 +3,7 @@
  "background": "white",
  "title": {
   "text": [
-   "Face profile: pass-rate heat, five models x eight faces",
+   "Face profile: pass-rate heat, six models x eight faces",
    "(2026-W37 full matrix, 23-case library)"
   ],
   "fontSize": 16,
@@ -254,6 +254,54 @@
     "face": "vision",
     "rate": 0.0,
     "label": "0/1"
+   },
+   {
+    "model": "swe-2-low",
+    "face": "req-drift",
+    "rate": 1.0,
+    "label": "1/1"
+   },
+   {
+    "model": "swe-2-low",
+    "face": "text",
+    "rate": 1.0,
+    "label": "3/3"
+   },
+   {
+    "model": "swe-2-low",
+    "face": "ops",
+    "rate": 0.6667,
+    "label": "4/6"
+   },
+   {
+    "model": "swe-2-low",
+    "face": "build",
+    "rate": 0.8333,
+    "label": "5/6"
+   },
+   {
+    "model": "swe-2-low",
+    "face": "review",
+    "rate": 0.5,
+    "label": "1/2"
+   },
+   {
+    "model": "swe-2-low",
+    "face": "verify",
+    "rate": 0.0,
+    "label": "0/3"
+   },
+   {
+    "model": "swe-2-low",
+    "face": "UI build",
+    "rate": 1.0,
+    "label": "1/1"
+   },
+   {
+    "model": "swe-2-low",
+    "face": "vision",
+    "rate": 1.0,
+    "label": "1/1"
    }
   ]
  },
