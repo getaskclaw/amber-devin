@@ -7,7 +7,7 @@ Public periodic [AMBER](https://github.com/getaskclaw/amber) benchmark results o
 - One `results/YYYY-Www.md` per issue: same cases, same harness, full library per model; effort bands side by side.
 - Each issue pins: library size and hashes, per-case d2 score and pass/fail, terminal states, token usage (when the lane reports it) and latency, environment fingerprint, and a qualitative verdict written under evidence discipline.
 - Cases, oracles, transcripts and intermediates are **never published**.
-- Sister repos: [amber-gpt](https://github.com/getaskclaw/amber-gpt), [amber-crof](https://github.com/getaskclaw/amber-crof), [amber-ollama](https://github.com/getaskclaw/amber-ollama).
+- Sister repos: [amber-gpt](https://github, [amber-workbuddy](https://github.com/getaskclaw/amber-workbuddy) (WorkBuddy ACP lane).com/getaskclaw/amber-gpt), [amber-crof](https://github.com/getaskclaw/amber-crof), [amber-ollama](https://github.com/getaskclaw/amber-ollama).
 
 ## Publication red lines
 
