@@ -21,14 +21,14 @@ Public periodic [AMBER](https://github.com/getaskclaw/amber) benchmark results o
 
 - **Report card** (2026-W37, 23-case library; figures from the issue's ladder table): swe-2-max 18/23 tops the board, SWE-2 four-band curve low 15 = medium 15 < high 16 < max 18; swe-1-7-medium 14/23, glm-5-2 6/23; small labels = public 21-case subset. (Six-model edition: swe-2-low 15/23 merged in the 2026-09-12 Addendum.)
   ![W37 report card: five-model bars](docs/images/scorecard-2026-w37.en.png)
-- **Face profile** (2026-W37 full matrix, face x model heatmap; color depth = per-face pass rate): swe-2-max sweeps ops 6/6, a suite first; all four SWE-2 bands pass UI build; verify is 0/3 for every model.
+- **Face profile** (2026-W37 full matrix, face x model heatmap; color depth = per-face pass rate): swe-2-max sweeps ops 6/6 — the lane's only sweep (earlier suite-wide sweeps: gpt luna ×3, ollama g53f); all four SWE-2 bands pass UI build; verify is 0/3 for every model.
   ![Face profile: pass-rate heatmap by model](docs/images/face-profile-2026-w37.en.png)
 
 ## Results index
 
 | Issue | Content | Headline |
 |---|---|---|
-| [2026-W37](results/2026-W37.md) | swe-1-7-medium + glm-5-2 + swe-2-high + swe-2-medium + swe-2-max + swe-2-low, 23-case library | **swe-2-max 18/23 (16/21) — new suite-wide board top**, band curve low 15 = medium 15 < high 16 < max 18, first-ever OPS 6/6 sweep, at ~4× the wall clock; swe-2-medium 15/23 fastest full library (43 min) with best-ever vision 4.0; swe-2-low 15/23 ties medium but keeps the heavy-judgment cases (Addendum 2026-09-12); swe-1-7-medium's review scalp stays uninherited; glm-5-2 6/23, delivery-contract failure = operational disqualifier |
+| [2026-W37](results/2026-W37.md) | swe-1-7-medium + glm-5-2 + swe-2-high + swe-2-medium + swe-2-max + swe-2-low, 23-case library | **swe-2-max 18/23 (16/21) — new suite-wide board top**, band curve low 15 = medium 15 < high 16 < max 18, the lane's only OPS 6/6 sweep, at ~4× the wall clock; swe-2-medium 15/23 fastest full library (43 min) with best-ever vision 4.0; swe-2-low 15/23 ties medium but keeps the heavy-judgment cases (Addendum 2026-09-12); swe-1-7-medium's review scalp stays uninherited; glm-5-2 6/23, delivery-contract failure = operational disqualifier |
 
 ## Disclaimer
 

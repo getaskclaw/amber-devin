@@ -27,14 +27,14 @@ English: [README.en.md](README.en.md)
 
 - **本期成绩单**（2026-W37，23 案全库，数字出期文 The ladder 表）：swe-2-max 18/23 全库榜首，SWE-2 四档 low 15 = medium 15 < high 16 < max 18；swe-1-7-medium 14/23，glm-5-2 6/23；柱下小字 = 公共 21 案子集。（六模型版：Addendum 2026-09-12 并入 swe-2-low 15/23）
   ![W37 成绩单：五模型柱](docs/images/scorecard-2026-w37.png)
-- **案面画像**（2026-W37 Full matrix 单表，face × 模型热力图，色深 = 分面通过率）：swe-2-max 运维面 6/6 史上首个全清；SWE-2 四档 UI 搭建连过；核验面六模型全部 0/3。
+- **案面画像**（2026-W37 Full matrix 单表，face × 模型热力图，色深 = 分面通过率）：swe-2-max 运维面 6/6 道内唯一全清（全场更早全清者：gpt luna 三档、ollama g53f）；SWE-2 四档 UI 搭建连过；核验面六模型全部 0/3。
   ![案面画像：face × 模型通过率热力图](docs/images/face-profile-2026-w37.png)
 
 ## 结果索引
 
 | 期 | 内容 | 结论 |
 |---|---|---|
-| [2026-W37](results/2026-W37.md) | swe-1-7-medium + glm-5-2 + swe-2-high + swe-2-medium + swe-2-max + swe-2-low 六模型全库（23 案） | **swe-2-max 18/23（16/21）全库新榜首**，档线 low 15 = medium 15 < high 16 < max 18，OPS 面史上首个 6/6 全清，代价 ~4 倍墙钟；swe-2-medium 15/23 最快全库 43 分钟+视觉 4.0 史上最高；swe-2-low 15/23 平 medium 但保住重判断案（Addendum 2026-09-12）；swe-1-7-medium 审查案首过无人继承；glm-5-2 6/23 交付契约零遵守=运行级失格 |
+| [2026-W37](results/2026-W37.md) | swe-1-7-medium + glm-5-2 + swe-2-high + swe-2-medium + swe-2-max + swe-2-low 六模型全库（23 案） | **swe-2-max 18/23（16/21）全库新榜首**，档线 low 15 = medium 15 < high 16 < max 18，OPS 面 6/6 全清（道内唯一），代价 ~4 倍墙钟；swe-2-medium 15/23 最快全库 43 分钟+视觉 4.0 史上最高；swe-2-low 15/23 平 medium 但保住重判断案（Addendum 2026-09-12）；swe-1-7-medium 审查案首过无人继承；glm-5-2 6/23 交付契约零遵守=运行级失格 |
 
 ## 免责
 
