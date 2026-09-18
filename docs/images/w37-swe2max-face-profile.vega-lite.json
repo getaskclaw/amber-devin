@@ -1,0 +1,228 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+ "background": "white",
+ "title": {
+  "text": "swe-2-max 面级画像（W37，18/23 全库新榜首）",
+  "fontSize": 16,
+  "anchor": "start",
+  "subtitle": "运维 6/6 道内唯一全清 + 前端 12/12；核验面是全家族天花板（0/3）",
+  "subtitleFontSize": 11,
+  "subtitleColor": "#777",
+  "subtitlePadding": 6
+ },
+ "width": 480,
+ "height": 256,
+ "config": {
+  "font": "Noto Sans CJK SC",
+  "axis": {
+   "labelFontSize": 12,
+   "titleFontSize": 13
+  },
+  "legend": {
+   "labelFontSize": 12
+  },
+  "view": {
+   "stroke": null
+  }
+ },
+ "layer": [
+  {
+   "data": {
+    "values": [
+     {
+      "face": "运维",
+      "v": 1.0,
+      "tier": "strong",
+      "lab": "6/6 道内唯一全清"
+     },
+     {
+      "face": "文本",
+      "v": 1.0,
+      "tier": "strong",
+      "lab": "3/3"
+     },
+     {
+      "face": "需求漂移",
+      "v": 1.0,
+      "tier": "strong",
+      "lab": "4/4 变体"
+     },
+     {
+      "face": "前端",
+      "v": 1.0,
+      "tier": "strong",
+      "lab": "12/12 家族四连"
+     },
+     {
+      "face": "编码",
+      "v": 0.958,
+      "tier": "strong",
+      "lab": "5/6 案 · 两案满分"
+     },
+     {
+      "face": "视觉",
+      "v": 0.778,
+      "tier": "mid",
+      "lab": "3.0 过线"
+     },
+     {
+      "face": "审查",
+      "v": 0.556,
+      "tier": "mid",
+      "lab": "一过一挂（-1.0）"
+     },
+     {
+      "face": "核验",
+      "v": 0.389,
+      "tier": "weak",
+      "lab": "0/3 · 归因案欠考（双撞 3600s 墙）"
+     }
+    ]
+   },
+   "mark": {
+    "type": "bar",
+    "cornerRadiusTopRight": 3,
+    "cornerRadiusBottomRight": 3
+   },
+   "encoding": {
+    "y": {
+     "field": "face",
+     "type": "ordinal",
+     "scale": {
+      "domain": [
+       "运维",
+       "文本",
+       "需求漂移",
+       "前端",
+       "编码",
+       "视觉",
+       "审查",
+       "核验"
+      ]
+     },
+     "axis": {
+      "title": null,
+      "labelFontSize": 12.5
+     }
+    },
+    "x": {
+     "field": "v",
+     "type": "quantitative",
+     "scale": {
+      "domain": [
+       0,
+       1.05
+      ]
+     },
+     "axis": {
+      "title": "完成度（钉过率）",
+      "values": [
+       0,
+       0.25,
+       0.5,
+       0.75,
+       1.0
+      ],
+      "grid": true
+     }
+    },
+    "color": {
+     "field": "tier",
+     "type": "nominal",
+     "scale": {
+      "domain": [
+       "strong",
+       "mid",
+       "weak"
+      ],
+      "range": [
+       "#2e9e5b",
+       "#5b8fc9",
+       "#c0392b"
+      ]
+     },
+     "legend": {
+      "title": null,
+      "orient": "bottom",
+      "offset": 10,
+      "labelExpr": "{'strong':'强（≥0.9）','mid':'中（0.4–0.9）','weak':'弱（<0.4）'}[datum.value]"
+     }
+    }
+   }
+  },
+  {
+   "data": {
+    "values": [
+     {
+      "face": "运维",
+      "v": 1.0,
+      "tier": "strong",
+      "lab": "6/6 道内唯一全清"
+     },
+     {
+      "face": "文本",
+      "v": 1.0,
+      "tier": "strong",
+      "lab": "3/3"
+     },
+     {
+      "face": "需求漂移",
+      "v": 1.0,
+      "tier": "strong",
+      "lab": "4/4 变体"
+     },
+     {
+      "face": "前端",
+      "v": 1.0,
+      "tier": "strong",
+      "lab": "12/12 家族四连"
+     },
+     {
+      "face": "编码",
+      "v": 0.958,
+      "tier": "strong",
+      "lab": "5/6 案 · 两案满分"
+     },
+     {
+      "face": "视觉",
+      "v": 0.778,
+      "tier": "mid",
+      "lab": "3.0 过线"
+     },
+     {
+      "face": "审查",
+      "v": 0.556,
+      "tier": "mid",
+      "lab": "一过一挂（-1.0）"
+     },
+     {
+      "face": "核验",
+      "v": 0.389,
+      "tier": "weak",
+      "lab": "0/3 · 归因案欠考（双撞 3600s 墙）"
+     }
+    ]
+   },
+   "mark": {
+    "type": "text",
+    "fontSize": 11,
+    "align": "left",
+    "dx": 6,
+    "color": "#444"
+   },
+   "encoding": {
+    "y": {
+     "field": "face",
+     "type": "ordinal"
+    },
+    "x": {
+     "field": "v",
+     "type": "quantitative"
+    },
+    "text": {
+     "field": "lab"
+    }
+   }
+  }
+ ]
+}
