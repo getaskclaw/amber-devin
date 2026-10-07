@@ -1,45 +1,41 @@
+[简体中文](README.zh-CN.md) · English
+
 # amber-devin
 
-> ⚠️ **更正（2026-10-02，另一项）**：防御轴的一案 A-d511f9e8 在所有车道上改记 NA（考场判的不是考生交付的文件，判分还要求了题面没写的事）。分母不变，**过案数不变**，每条道的总分都带 `'`。本仓各期成绩表里这一格请按 NA 读，其余内容保留原样，以[更正声明](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02-a-d511f9e8.md)为准。
+> ⚠️ **Correction (2026-10-02, second)**: one defense-axis case, A-d511f9e8, is now NA on every lane (the exam room did not grade the file the candidate delivered, and the grader asks for something the task text does not say). The denominator and the **number of passed cases do not change**; every lane's total now carries `'`. In this repo's issue tables, read that cell as NA. Everything else stays as published; the [correction notice](https://github.com/getaskclaw/amber/blob/main/docs/corrections-2026-10-02-a-d511f9e8.en.md) governs.
 
-用私有题库 **AMBER** 实测 Devin 系模型（swe 系列等，含不同推理档位），只公开结果，不公开题目。
-English: [README.en.md](README.en.md)
+Public periodic [AMBER](https://github.com/getaskclaw/amber) benchmark results of Devin models (swe family and friends, across reasoning-effort band (the thinking-effort setting)s). **Cases stay private; results are public.**
 
-## 这是什么
+## What this is
 
-- 「道」= 同一个模型名在不同家的卖场/接口；「案」= 一道题，「卷」= 一场考试记录（一案多卷 = 一道题的几个变体场次）。
+- A 'lane' is one vendor's shop/API for a model name; a 'case' is one task, a 'run' is one sitting (a multi-variant case has several runs).
 
-- 每期一篇 `results/YYYY-Www.md`：同题、同 harness（跑考试并记分的程序），对目标模型跑全库；同模型不同 effort 档（思考力度档位）位并排。
-- 一期固定报告：题集规模与哈希、每案找茬分（d2 分，我们的打分，算法不公开）与通过/失败、终端终态（程序跑完时的退出状态）、token 用量（若车道上报）与时延、环境指纹、按证据纪律写的定性裁决。
-- 题目、oracle（判分器）、transcript（答题全过程记录）、中间产物**永不公开**（见下「发布纪律」）。
-- 姐妹仓：[amber-gpt](https://github.com/getaskclaw/amber-gpt)（GPT 系周测）、[amber-crof](https://github.com/getaskclaw/amber-crof)（CrofAI 周测）、[amber-ollama](https://github.com/getaskclaw/amber-ollama)（Ollama Cloud 周测）、[amber-workbuddy](https://github.com/getaskclaw/amber-workbuddy)（WorkBuddy ACP 道）、[amber-commandcode](https://github.com/getaskclaw/amber-commandcode)、[amber-deepseek](https://github.com/getaskclaw/amber-deepseek)、[amber-doubao](https://github.com/getaskclaw/amber-doubao)、[amber-goldenpotato](https://github.com/getaskclaw/amber-goldenpotato)、[amber-kimi](https://github.com/getaskclaw/amber-kimi)、[amber-opencode](https://github.com/getaskclaw/amber-opencode)、[amber-stepfun](https://github.com/getaskclaw/amber-stepfun)。
-- AMBER 是 agentic 实战题库（施工/运维/审查/视觉/需求漂移——题中要求中途变化），规范与制题工具见 [getaskclaw/amber](https://github.com/getaskclaw/amber)；考题本体私有。
+- One `results/YYYY-Www.md` per issue: same cases, same harness (the program that runs the exam and scores it), full library per model; effort bands side by side.
+- Each issue pins: library size and hashes, per-case defect-hunt score and pass/fail, terminal states (how the run process exited), token usage (when the lane reports it) and latency, environment fingerprint, and a qualitative verdict written under evidence discipline.
+- Cases, oracles, transcripts (full answer logs)s and intermediates are **never published**.
+- Sister repos: [amber-gpt](https://github.com/getaskclaw/amber-gpt), [amber-crof](https://github.com/getaskclaw/amber-crof), [amber-ollama](https://github.com/getaskclaw/amber-ollama), [amber-workbuddy](https://github.com/getaskclaw/amber-workbuddy) (WorkBuddy ACP lane), [amber-commandcode](https://github.com/getaskclaw/amber-commandcode), [amber-deepseek](https://github.com/getaskclaw/amber-deepseek), [amber-doubao](https://github.com/getaskclaw/amber-doubao), [amber-goldenpotato](https://github.com/getaskclaw/amber-goldenpotato), [amber-kimi](https://github.com/getaskclaw/amber-kimi), [amber-opencode](https://github.com/getaskclaw/amber-opencode), [amber-stepfun](https://github.com/getaskclaw/amber-stepfun).
 
-## 发布纪律（红线）
+## Publication red lines
 
-1. 只发：分数与聚合、token 用量（若车道上报）、速度、定性裁决。
-2. 永不发：题目内容、oracle/判分器、transcript、考生工作区、任何能复原题面的中间产物。
-3. 每期必钉：模型 ID、effort 档、日期（UTC）、harness 版本、每案内容哈希（bundle_sha，每题内容的哈希指纹）。哈希用于对照 [amber](https://github.com/getaskclaw/amber) 的公开哈希清单，自证题集未变。
-4. 案号与题目结构属私有面：公开结果里案例只用稳定别名（A-xxxxxxxx，哈希派生）+ bundle 哈希作句柄；内部案号、变体名、题目描述永不出现。
-5. 基调：这是社区实测，不是对厂商的攻击。数据说话，措辞克制。
+1. Publish only: scores and aggregates, token usage (when reported), speed, qualitative verdicts.
+2. Never publish: case content, oracles/graders, transcripts, candidate workspaces, anything that could reconstruct a case.
+3. Every issue pins: model ID, effort band, date (UTC), harness version, per-case bundle hash — verifiable against the public hash index in [amber](https://github.com/getaskclaw/amber).
+4. Case numbering is private: public matrices use stable aliases (A-xxxxxxxx, hash-derived) plus bundle hashes only.
+5. Tone: community measurement, not vendor attacks.
 
-## 一个方法论前提
+## Charts
 
-同名模型、同 provider，两次跑也可能不同分——推理参数、负载、服务端版本都在漂。所以这里的一切结论都带日期与档位，且定期重测。单日数字是快照，不是定律。
+- **Report card** (2026-W37, 23-case library; figures from the issue's ladder table): swe-2-max 18/23 tops the board, SWE-2 band curve medium 15 < high 16 ≈ high re-run 15 < max 18 ([correction 2026-09-18](results/2026-W37.md): the results originally labeled swe-2-low were actually a swe-2-high re-run; the old curve low 15 = medium 15 is withdrawn); swe-1-7-medium 14/23, glm-5-2 6/23; small labels = public 21-case subset.
+  ![W37 report card: five-model bars](docs/images/scorecard-2026-w37.en.png)
+- **Face profile** (2026-W37 full matrix, face x model heatmap; color depth = per-face pass rate): swe-2-max sweeps ops 6/6 — the lane's only sweep (earlier suite-wide sweeps: gpt luna ×3, ollama g53f); all four SWE-2 bands pass UI build; verify is 0/3 for every model.
+  ![Face profile: pass-rate heatmap by model](docs/images/face-profile-2026-w37.en.png)
 
-## 图说数据
+## Results index
 
-- **本期成绩单**（2026-W37，23 案全库，数字出期文 The ladder 表）：swe-2-max 18/23 全库榜首，SWE-2 档线 medium 15 < high 16 ≈ high 二跑 15 < max 18（[2026-09-18 更正](results/2026-W37.md)：原记 swe-2-low 的成绩实为 swe-2-high 二跑，档线旧文 low 15 = medium 15 作废）；swe-1-7-medium 14/23，glm-5-2 6/23；柱下小字 = 公共 21 案子集。
-  ![W37 成绩单：五模型柱](docs/images/scorecard-2026-w37.png)
-- **案面画像**（2026-W37 Full matrix 单表，face × 模型热力图，色深 = 分面通过率）：swe-2-max 运维面 6/6 道内唯一全清（全场更早全清者：gpt luna 三档、ollama g53f）；SWE-2 四档 UI 搭建连过；核验面六模型全部 0/3。
-  ![案面画像：face × 模型通过率热力图](docs/images/face-profile-2026-w37.png)
-
-## 结果索引
-
-| 期 | 内容 | 结论 |
+| Issue | Content | Headline |
 |---|---|---|
-| [2026-W37](results/2026-W37.md) | swe-1-7-medium + glm-5-2 + swe-2-high + swe-2-medium + swe-2-max + swe-2-low 六模型全库（23 案） | **swe-2-max 18/23（16/21）全库新榜首**，档线 medium 15 < high 16 ≈ high 二跑 15 < max 18（[2026-09-18 更正](results/2026-W37.md)：swe-2-low 不存在，该轮实为 swe-2-high 二跑），OPS 面 6/6 全清（道内唯一），代价 ~4 倍墙钟；swe-2-medium 15/23 最快全库 43 分钟+视觉 4.0 史上最高；swe-2-high 二跑 15/23 平 medium 但保住重判断案（原记 swe-2-low，Addendum 2026-09-12）；swe-1-7-medium 审查案首过无人继承；glm-5-2 6/23 交付契约零遵守=运行级失格 |
+| [2026-W37](results/2026-W37.md) | swe-1-7-medium + glm-5-2 + swe-2-high + swe-2-medium + swe-2-max + swe-2-low, 23-case library | **swe-2-max 18/23 (16/21) — new suite-wide board top**, band curve medium 15 < high 16 ≈ high re-run 15 < max 18 ([correction 2026-09-18](results/2026-W37.md): swe-2-low does not exist; that run was actually swe-2-high), the lane's only OPS 6/6 sweep, at ~4× the wall clock; swe-2-medium 15/23 fastest full library (43 min) with best-ever vision 4.0; swe-2-high re-run 15/23 ties medium but keeps the heavy-judgment cases (originally labeled swe-2-low, Addendum 2026-09-12); swe-1-7-medium's review scalp stays uninherited; glm-5-2 6/23, delivery-contract failure = operational disqualifier |
 
-## 免责
+## Disclaimer
 
-与 Cognition 无任何隶属/赞助关系。分数是特定周、特定档位的快照，不构成采购建议。
+Not affiliated with or sponsored by Cognition. Scores are dated, band-specific snapshots, not purchasing advice.
