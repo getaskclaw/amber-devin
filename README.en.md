@@ -8,6 +8,30 @@
 
 Public periodic [AMBER](https://github.com/getaskclaw/amber) benchmark results of Devin models (swe family and friends, across reasoning-effort band (the thinking-effort setting)s). **Cases stay private; results are public.**
 
+## Scoreboard
+
+<!-- scoreboard:start -->
+
+![amber-devin scoreboard: cases passed per axis for swe-2-max](results/assets/scoreboard.en.png?v=20261009)
+
+| Group | Axis | What it tests | swe-2-max · [W37](results/2026-W37.md) |
+|---|---|---|:-:|
+| Building | Coding | Implement the spec correctly | 5/6 |
+|  | Delivery | Done means handed in | 3/3 |
+|  | Ops | Follow the runbook | 6/6 |
+|  | Requirements | Ship A when A was asked | 1/1 |
+|  | Convergence | Finish, don't spin | 1/1 |
+| Judging | UI | Build the page to the mock | 1/1 |
+|  | Vision | Spot defects in screenshots | 1/1 |
+|  | Defense | Plug every hole in the validator | 0/2 · 1 NA |
+|  | Attribution | Pin defects to their root cause | 0/1 · 1 NA |
+|  | Review | Inspect someone else's work | 1/2 · 1 NA |
+|  | **Total** |  | **19'/24** |
+
+Each cell = cases passed / cases on that axis (a case is one scored task). NA = the case was voided or put on hold; it counts as neither a pass nor a fail, and a total carrying `'` contains at least one NA. Most axes hold only 1–2 cases, so one case moves the reading: do not over-read small gaps. All columns are from the same week (W37) and the test dates may differ; every number is a snapshot.
+
+<!-- scoreboard:end -->
+
 ## What this is
 
 - A 'lane' is one vendor's shop/API for a model name; a 'case' is one task, a 'run' is one sitting (a case with more than one variant has more runs).
