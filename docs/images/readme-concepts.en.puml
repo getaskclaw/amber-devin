@@ -1,0 +1,25 @@
+@startuml
+skinparam defaultFontName "WenQuanYi Zen Hei"
+skinparam defaultFontSize 15
+skinparam shadowing false
+skinparam backgroundColor #FFFFFF
+skinparam rectangle { BackgroundColor #F7F7F5
+BorderColor #444444
+RoundCorner 14 }
+skinparam ArrowColor #444444
+skinparam ArrowFontSize 13
+skinparam NoteBackgroundColor #FFFBEA
+skinparam NoteBorderColor #C9B458
+skinparam padding 8
+left to right direction
+rectangle "lane\none model name × one vendor shop or API" as Lane
+rectangle "case\none scored task; the unit of the denominator" as Case
+rectangle "run\none sitting; a case can have several runs" as Run
+rectangle "result\npass · fail · NA" as Result
+Lane -right-> Run : sits
+Case -right-> Run : tests
+Run -right-> Result : graded to
+note bottom of Result
+NA = voided or on hold: counts neither as a pass nor a fail.
+end note
+@enduml

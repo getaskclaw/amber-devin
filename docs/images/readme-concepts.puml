@@ -1,0 +1,25 @@
+@startuml
+skinparam defaultFontName "WenQuanYi Zen Hei"
+skinparam defaultFontSize 15
+skinparam shadowing false
+skinparam backgroundColor #FFFFFF
+skinparam rectangle { BackgroundColor #F7F7F5
+BorderColor #444444
+RoundCorner 14 }
+skinparam ArrowColor #444444
+skinparam ArrowFontSize 13
+skinparam NoteBackgroundColor #FFFBEA
+skinparam NoteBorderColor #C9B458
+skinparam padding 8
+left to right direction
+rectangle "道\n同一个模型名 × 一家卖场或接口" as Lane
+rectangle "案\n一道计分题；分母的单位" as Case
+rectangle "卷\n一次作答记录；同一案可有多卷" as Run
+rectangle "结果\n过 · 没过 · NA" as Result
+Lane -right-> Run : 作答
+Case -right-> Run : 考的是
+Run -right-> Result : 判分
+note bottom of Result
+NA = 作废或暂停：不算过，也不算没过。
+end note
+@enduml
