@@ -1,20 +1,19 @@
 @startuml
 skinparam defaultFontName "WenQuanYi Zen Hei"
-skinparam defaultFontSize 15
+skinparam defaultFontSize 16
 skinparam shadowing false
 skinparam backgroundColor #FFFFFF
 skinparam rectangle { BackgroundColor #F7F7F5
 BorderColor #444444
-RoundCorner 14 }
+RoundCorner 12 }
 skinparam ArrowColor #444444
-skinparam ArrowFontSize 13
+skinparam ArrowFontSize 14
 skinparam NoteBackgroundColor #FFFBEA
 skinparam NoteBorderColor #C9B458
-skinparam padding 8
-left to right direction
+skinparam padding 6
 rectangle "页内口径（W37 期文）\n23 案 · 过 18 · 没过 2 · NA 3\n写作：18/23" as A
 rectangle "榜单口径（成绩一览）\n24 案 · 过 19 · 没过 2 · NA 3\n写作：19&#39;/24" as B
-A -right-> B : 并入收敛案\n（2026-09-21 补测，过 1）
+A -down-> B : 并入收敛案\n（2026-09-21 补测，过 1）
 note bottom of B
 NA = 作废或暂停：不算过，也不算没过。
 分母不变；总分带撇号 &#39; 表示含 NA。

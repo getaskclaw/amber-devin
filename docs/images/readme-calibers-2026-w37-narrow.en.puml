@@ -1,20 +1,19 @@
 @startuml
 skinparam defaultFontName "WenQuanYi Zen Hei"
-skinparam defaultFontSize 15
+skinparam defaultFontSize 16
 skinparam shadowing false
 skinparam backgroundColor #FFFFFF
 skinparam rectangle { BackgroundColor #F7F7F5
 BorderColor #444444
-RoundCorner 14 }
+RoundCorner 12 }
 skinparam ArrowColor #444444
-skinparam ArrowFontSize 13
+skinparam ArrowFontSize 14
 skinparam NoteBackgroundColor #FFFBEA
 skinparam NoteBorderColor #C9B458
-skinparam padding 8
-left to right direction
+skinparam padding 6
 rectangle "Page count (W37 issue)\n23 cases · 18 passed · 2 failed · 3 NA\nwritten: 18/23" as A
 rectangle "Board count (scoreboard)\n24 cases · 19 passed · 2 failed · 3 NA\nwritten: 19&#39;/24" as B
-A -right-> B : add convergence case\n(re-sat 2026-09-21, passed 1)
+A -down-> B : add convergence case\n(re-sat 2026-09-21, passed 1)
 note bottom of B
 NA = voided or on hold: counts neither as a pass nor a fail.
 Denominator stays fixed; a total with an apostrophe &#39; contains NA.

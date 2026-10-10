@@ -14,21 +14,34 @@ Public periodic [AMBER](https://github.com/getaskclaw/amber) benchmark results o
 
 <!-- scoreboard:start -->
 
-![amber-devin scoreboard: cases passed per axis for swe-2-max](results/assets/scoreboard.en.png?v=20261009)
+![amber-devin scoreboard: cases passed per axis for swe-2-max](results/assets/scoreboard.en.png?v=20261010)
 
-| Group | Axis | What it tests | swe-2-max · [W37](results/2026-W37.md) |
-|---|---|---|:-:|
-| Building | Coding | Implement the spec correctly | 5/6 |
-|  | Delivery | Done means handed in | 3/3 |
-|  | Ops | Follow the runbook | 6/6 |
-|  | Requirements | Ship A when A was asked | 1/1 |
-|  | Convergence | Finish, don't spin | 1/1 |
-| Judging | UI | Build the page to the mock | 1/1 |
-|  | Vision | Spot defects in screenshots | 1/1 |
-|  | Defense | Plug every hole in the validator | 0/2 · 1 NA |
-|  | Attribution | Pin defects to their root cause | 0/1 · 1 NA |
-|  | Review | Inspect someone else's work | 1/2 · 1 NA |
-|  | **Total** |  | **19'/24** |
+| Group | Axis | swe-2-max · [W37](results/2026-W37.md) |
+|---|---|:-:|
+| Building | Coding | 5/6 |
+|  | Delivery | 3/3 |
+|  | Ops | 6/6 |
+|  | Requirements | 1/1 |
+|  | Convergence | 1/1 |
+| Judging | UI | 1/1 |
+|  | Vision | 1/1 |
+|  | Defense | 0/2 · 1 NA |
+|  | Attribution | 0/1 · 1 NA |
+|  | Review | 1/2 · 1 NA |
+|  | **Total** | **19'/24** |
+
+What each axis tests:
+
+- **Coding**: Implement the spec correctly
+- **Delivery**: Done means handed in
+- **Ops**: Follow the runbook
+- **Requirements**: Ship A when A was asked
+- **Convergence**: Finish, don't spin
+- **UI**: Build the page to the mock
+- **Vision**: Spot defects in screenshots
+- **Defense**: Plug every hole in the validator
+- **Attribution**: Pin defects to their root cause
+- **Review**: Inspect someone else's work
 
 Each cell = cases passed / cases on that axis (a case is one scored task). NA = the case was voided or put on hold; it counts as neither a pass nor a fail, and a total carrying `'` contains at least one NA. Most axes hold only 1–2 cases, so one case moves the reading: do not over-read small gaps. All columns are from the same week (W37) and the test dates may differ; every number is a snapshot.
 
@@ -40,13 +53,13 @@ Each cell = cases passed / cases on that axis (a case is one scored task). NA = 
 - **19'/24** is the board total: 24 cases, the 23 plus the convergence case. The apostrophe means the total contains at least one NA.
 - For swe-2-max's current total, read the board: **19'/24**.
 
-![How the two counts relate: page 18/23, plus the convergence case, board 19'/24](docs/images/readme-calibers-2026-w37.en.png)
+<p align="center"><img src="docs/images/readme-calibers-2026-w37-narrow.en.png" width="460" alt="How the two counts relate: page 18/23, plus the convergence case, board 19'/24"></p>
 
 ## What this is
 
 - Four terms are all you need to read this repo; the figure shows how they connect:
 
-![How lane, case, run and NA connect](docs/images/readme-concepts.en.png)
+<p align="center"><img src="docs/images/readme-concepts-narrow.en.png" width="460" alt="How lane, case, run and NA connect"></p>
 
 - **Lane**: one model name on one vendor's shop or API. The same model name on two vendors makes two lanes.
 - **Case**: one scored task; the unit of the denominator. Public pages use only aliases `A-xxxxxxxx`.

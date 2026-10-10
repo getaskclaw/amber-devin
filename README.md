@@ -40,13 +40,13 @@
 - **19'/24**：榜单上的总成绩，共 24 案（23 案 + 收敛案 1 案）。撇号表示其中含 NA。
 - 想看 swe-2-max 现在的总成绩，看榜单的 **19'/24**。
 
-![两个口径的关系：页内 18/23，并入收敛案后榜单 19'/24](docs/images/readme-calibers-2026-w37.png)
+<p align="center"><img src="docs/images/readme-calibers-2026-w37-narrow.png" width="460" alt="两个口径的关系：页内 18/23，并入收敛案后榜单 19'/24"></p>
 
 ## 这是什么
 
 - 下图四个词就够读懂本仓：
 
-![道、案、卷、NA 的关系](docs/images/readme-concepts.png)
+<p align="center"><img src="docs/images/readme-concepts-narrow.png" width="460" alt="道、案、卷、NA 的关系"></p>
 
 - **道**：同一个模型名在某一家卖场或接口上的通道。同名模型在不同家，算不同的道。
 - **案**：一道计分题，是分母的单位。公开页面只用别名 `A-xxxxxxxx`。
